@@ -1,5 +1,13 @@
+
+
 MultiMiner
 ==========
+
+
+
+
+### Author: Adam.trinity1 --> Skype:
+### Email: Aminrahman24@gmail.com
 ### Your coins. Your pools. Your way.
 __MultiMiner__ is a graphical application for crypto-coin mining on Windows, OS X and Linux. MultiMiner simplifies switching individual devices (GPUs, ASICs, FPGAs) between crypto-currencies such as Bitcoin and Litecoin.
 
@@ -109,38 +117,11 @@ Generic Mono Installation
 
         mono MultiMiner.Win.exe
         
-FAQ
--------
 
-* How do I restart the setup wizard? How do I delete all my MultiMiner settings and start over?
-    * Reset settings by deleting the contents of %appdata%\MultiMiner (type that into the address bar in Windows Explorer). Be sure to quit MultiMiner before you delete the contents. Then, restart MultiMiner.
-* Should I modify my GPU settings (overclock, undervolt, etc) with a utility like MSI Afterburner, or via config flags in MultiMiner?
-    * Utilities like MSI Afterburner are recommended. Relying on bfgminer (via the config flags in MultiMiner) to do the clocking and fan speed does work, but if the bfgminer crashes it leaves things over/under-clocked/volted. GPU utilities seems to be more reliable.
-* I found a question and answer in the Support thread below (or through gosh darned trial and error) that I wish had been here in the FAQ - how do I save the next visitor all the trouble I went through?
-    * Simple! Make a pull request to add to the FAQ, or email your Q and A to cooper dot marcus at gmail dot com (Qs without As will be ignored) and he'll add it to the FAQ for you.
 
-Support
--------
-The official forums for MultiMiner can be found [here][15].
+
         
-Source Code
------------
-The source code is structured in such a way that it should be fairly easy to use and re-use for other projects:
 
-* __MultiMiner.Xgminer__ is an assembly for controlling the bfgminer executable - e.g. launching and enumerating devices
-* __MultiMiner.Xgminer.Api__ assists in communicating with the underlying miner via the RPC API
-* __MultiMiner.Coinchoose__ assists in consuming the cypto-currency information available at [CoinChoose.com][9]
-* __MultiMiner.MobileMiner__ facilitates communicating with the [MobileMiner][14] REST API
-* __MultiMiner.Engine__ is an assembly that can be used to interact with all functionality found in MultiMiner, but without a UI - useful for creating front-ends for other OS's
-* __MultiMiner.Win__ is the Windows Forms application
-
-Source Code Example
--------------
-This simple example shows how to use [MultiMiner.Xgminer.dll][16] and [MultiMiner.Xgminer.Api.dll][17] to install bfgminer, iterate through available mining devices, and launch the miner.
-
-Afterwards the bfgminer [RPC API][18] is used to output the miner hashrate for a minute before the mining process is stopped. You can try this code out yourself in the [MultiMiner.Example][19] project.
-
-![MultiMiner.Api.Example](https://raw.github.com/nwoolls/MultiMiner/master/Screenshots/MultiMiner.Api.Example.png "MultiMiner.Api.Example")
 
 ```csharp
 //examples of using MultiMiner.Xgminer.dll and MultiMiner.Xgminer.Api.dll
@@ -268,14 +249,13 @@ Console.ReadKey();
 
 License
 -------
-Copyright (C) 2013 Nathanial Woolls
+not for use, unless given permission by: aminrahman24@gmail.com 
+all code is copyrighted with NDA.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+Credits to All the GITHUB REPO's I FOKED LMFAO.
 
 [1]: https://github.com/ckolivas/cgminer
 [2]: https://github.com/luke-jr/bfgminer
